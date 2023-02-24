@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+       "he he he he na"
+       "te te pi pi na"
+       "te te pi  pi ad"
+       "te te co co co";
+       background: rgba(227, 211, 211, 0.384);
+}
+
+.box{
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.header{
+    background: url(./img/back-header.jpg);
+    background-size: cover;
+    grid-area: he;
+}
+
+h1{
+    font-size: 6em;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+    font-family: 'Courgette', cursive;
+    color: rgba(247, 219, 183, 0.788);
+    text-shadow: 2px 4px 6px black;
+}
+
+.navbar{
+    grid-area: na;
+    background: url(./img/back-nav.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+ul{
+    color: aliceblue;
+    margin-top: 120px;
+    font-size: 2.3em;
+}
+
+li{
+    list-style-type: none;
+    margin: 10px;
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+.text{
+    grid-area: te;
+    background: yellow;
+}
+
+.picture{
+    grid-area: pi;
+    background: url(./img/picture.jpg);
+    background-size: cover;
+}
+
+.adresse{
+    grid-area: ad;
+    background: purple;
+}
+
+.contact{
+    grid-area: co;
+    background: black;
+}
